@@ -85,7 +85,7 @@ AVCaptureSession的开始和结束：
 ```
 ## 获取音频数据
 在回调里面我们会拿到一个引用CMSampleBufferRef，CMSampleBuufer的结构如下：
-![CMSampleBuffer的结构图](https://upload-images.jianshu.io/upload_images/1185175-63b540861019f31d.png?imageMogr2/auto-orient/strip|imageView2/2/w/620/format/webp)
+![CMSampleBuffer的结构图](https://upload-images.jianshu.io/upload_images/3277096-d4c9d1c5cfd2bd69.png?imageMogr2/auto-orient/strip|imageView2/2/w/620)
 这里我们取到里面的CMBlockBuffer，然后取里面的音频数据。
 ```
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection{
